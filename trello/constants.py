@@ -1,0 +1,1 @@
+default_header = {"Accept": "application/json"}
