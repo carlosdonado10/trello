@@ -11,18 +11,12 @@ def main():
         requirements = f.read().splitlines()
 
     setup(
-        name="EkonsBase",
+        name="TrelloInterface",
         version="0.0.1",
-        description="Ekons Scheduler",
-        author="BCG",
+        description="Interface to connect to the trello API",
+        author="Carlos Donado",
         install_requires=requirements,
         packages=find_packages(),
-        package_data={
-            "EkonsBase": ["docs/*", "docs/**/**", "config/*", "config/**/**"]
-        },
-        entry_points={
-            "console_scripts": ["ekons-cli=EkonsBase.entrypoints.entrypoints:cli"]
-        },
     )
 
 
