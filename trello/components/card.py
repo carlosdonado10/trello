@@ -18,6 +18,7 @@ class Card(BaseModel):
     due: Optional[datetime]
     shortUrl: Optional[str]
     idMembers: List[str]
+    idList: Optional[str]
 
     def update_custom_field(self, custom_field: CustomField):
         """
